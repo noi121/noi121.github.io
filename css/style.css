@@ -121,10 +121,9 @@ header {
 .moving-pics {
     width: 100%;
     flex-basis: 50%;
-}
-
-picture {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-img {
