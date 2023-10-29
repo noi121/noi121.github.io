@@ -1,31 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="shortcut icon" href="img/crown.png"> -->
-    <!-- <script src="https://kit.fontawesome.com/eca7cadb3c.js" crossorigin="anonymous"></script> -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <!-- <link -->
-        <!-- href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" -->
-        <!-- rel="stylesheet"> -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <!-- <link -->
-        <!-- href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" -->
-        <!-- rel="stylesheet"> -->
+    <link rel="shortcut icon" href="img/shortcut-logo.png">
+    <script src="https://kit.fontawesome.com/eca7cadb3c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Cukrászda</title>
+    <title>MézesBéles Cukrászda</title>
 </head>
 
 <body>
-<h1>Hello World</h1>
-<p>This is the website of my thesis project. (Thesis project coming soon...)</p>
-    <h1>Hello World</h1>
-    <p>This is the website of my thesis project. (Thesis project coming soon...)</p>
+    <!-- header -->
+    <header class="header">
+        <!-- navbar -->
+        <div class="navbar">
+            <div class="navigation-logo">
+                <a href="index.html"><img src="img/logo.png" alt="MézesBéles LOGO"></a>
+            </div>
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link" id="current">főoldal</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="about-us.html" class="navigation-link">rólunk</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="menu.html" class="navigation-link">menü</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="contact.html" class="navigation-link">kapcsolat</a>
+                </li>
+                <li class="navigation-item-order">
+                    <button class="navigation-btn">rendelés</button>
+                </li>
+            </ul>
+        </div>
+        <!-- end of navbar -->
+        <!-- moving pics -->
+        <div class="moving-pics">
+            <picture>
+                <source srcset="img/transparent.png" media="(max-height: 500px) and (orientation: landscape)"
+                    class="header-img" />
+                <source srcset="img/header-pic-2.jpg" media="(max-height: 750px)" class="header-img" />
+                <source srcset="img/header-pic-2.jpg" media="(orientation: landscape)" class="header-img" />
+                <source srcset="img/header-pic-2.jpg" media="(min-width: 1200px)" class="header-img" />
+                <source srcset="img/header-pic-2-750w.jpg" media="(max-width: 500px)" class="header-img" />
+                <img src="img/header-pic-2-750w.jpg" alt="Tortadíszítés" class="header-img" />
+            </picture>
+
+            <!-- <img src="img/header-pic-2.jpg" alt="Készülnek a sütemények" class="header-img"> -->
+        </div>
+        <!-- end of moving pics -->
+        <!-- header text -->
+        <div class="banner">
+            <h1 class="banner-heading">MézesBéles Cukrászda</h1>
+            <p class="banner-p">1079 Budapest, Édesség utca 172/B.</p>
+        </div>
+        <!-- end of header text -->
+    </header>
+    <!-- end of header -->
+
+    <!-- about us -->
+    <section class="about-us">
+        <div class="about-us-card">
+            <div class="img-wrapper">
+                <img src="img/from-outside.jpg" alt="MézesBéles kirakat" class="img-outside">
+            </div>
+            <p class="basic-infos">
+                <strong>Alapítás éve: </strong>2018.</br>
+                <strong>Alapítók: </strong>Kecske Béla és felesége
+            </p>
+            <a href="about-us.html"><button class="about-us-btn">Részletek</button></a>
+        </div>
+        <div class="about-us-text">
+            <h1 class="about-us-header">Rólunk</h1>
+            <p class="about-us-text-p">
+                A MézesBéles Cukrászda 2018-ban alakult Kecske Béla és felesége kezdeményezésére. A nevet két kedvelt
+                süteményük, a mézes krémes és a meggyes béles inspirálta, és kiválóan reprezentálja a változatos
+                kínálatot. Az alapítók célja egyedi és modern sütemények készítése volt, melyek a hagyományos magyar
+                ízvilágot ötvözik az újdonságokkal. Hamar népszerűséget szereztek kiváló minőségükkel. Az évek alatt
+                nemcsak egy cukrászdává váltak, hanem egy közösségi tér is, ahol az emberek találkoznak, emlékeket és
+                történeteket osztanak meg. A vállalkozás mögött egy erős családi hagyomány és szenvedély húzódik, ami az
+                alapítókban, Bélában és Erzsébetben is megmutatkozik.
+            </p>
+        </div>
+    </section>
+    <!-- end of about us -->
+
+    <!-- services -->
+    <section class="services">
+        <div class="services-container">
+            <h1 class="services-main-title">Szolgáltatásaink</h1>
+
+            <div class="services-cards">
+                <div class="services-card">
+                    <img src="img/birthday-cake-symbol.png" alt="Szülinapi torta szimbólum"
+                        class="services-card-symbol symbol-1">
+                    <h2 class="services-card-title">Szülinapi torta rendelések</h2>
+                    <p class="services-card-description">Ünnepelje meg szerettei születésnapját a MézesBéles
+                        Cukrászdával! Különleges, kézzel készített tortáinkkal garantáltan felejthetetlenné tesszük az
+                        ünnepi pillanatokat.</p>
+                </div>
+                <div class="services-card">
+                    <img src="img/custom-cake-symbol.png" alt="Emeletes torta szimbólum"
+                        class="services-card-symbol symbol-2">
+                    <h2 class="services-card-title">Egyedi torta és sütemény rendelések</h2>
+                    <p class="services-card-description">Az egyediség a specialitásunk. Alkossunk együtt különleges
+                        süteményeket és tortákat kizárólag Önnek, amelyek tükrözik az Ön ízlését és elképzeléseit.</p>
+                </div>
+                <div class="services-card">
+                    <img src="img/delivery-symbol.png" alt="Kamion szimbólum" class="services-card-symbol symbol-3">
+                    <h2 class="services-card-title">Házhozszállítás</h2>
+                    <p class="services-card-description">Ne hagyja, hogy a távolság álljon az Ön és a friss, finom
+                        sütemények között. Gyors és megbízható házhozszállítással várjuk!</p>
+                </div>
+                <div class="services-card">
+                    <img src="img/wedding-symbol.png" alt="Jegygyűrű szimbólum" class="services-card-symbol symbol-4">
+                    <h2 class="services-card-title">Rendezvényhelyszín</h2>
+                    <p class="services-card-description">A MézesBéles Cukrászda nem csak édességek otthona, hanem a
+                        tökéletes helyszín minden eseményhez, ahol a minőségi kiszolgálás és a kiváló környezet
+                        garantált.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of services -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="main-part">
+            <div class="footer-list-wrapper">
+                <h3 class="footer-heading">MézesBéles Cukrászda</h3>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a href="#" class="footer-list-link">
+                            info@mezesbeles.hu
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#" class="footer-list-link">
+                            1079 Budapest, Édesség utca 172/B.
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#" class="footer-list-link">
+                            Tel: +123 456 789
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-list-wrapper">
+                <h3 class="footer-heading">Gyors linkek</h3>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a href="#" class="footer-list-link">
+                            Főoldal
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="about-us.html" class="footer-list-link">
+                            Rólunk
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="menu.html" class="footer-list-link">
+                            Menü
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="contact.html" class="footer-list-link">
+                            Kapcsolat
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#" class="footer-list-link">
+                            Rendelés
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3 class="footer-heading">Kapcsolat</h3>
+                <p>Feliratkozás a hírlevélre</p>
+                <form class="footer-form">
+                    <input type="text" class="footer-input" placeholder="Your email...">
+                    <button class="footer-btn">Feliratkozás</button>
+                </form>
+            </div>
+        </div>
+        <div class="creator-part">
+            <div class="copyright-text">
+                <p>Copyright &copy; 2023. Corvinus University of Budapest. Thesis Project of Noémi Gazdik. All rights
+                    reserved.</p>
+            </div>
+            <div class="text-right">
+                <p>Made With <i class="fas fa-heart"></i> by <span>Noi</span></p>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
 </body>
 
 </html>

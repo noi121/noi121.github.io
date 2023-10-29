@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/shortcut-logo.png">
+    <script src="https://kit.fontawesome.com/eca7cadb3c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MézesBéles Cukrászda</title>
+</head>
+
+<body>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+            var cards = document.querySelectorAll('.card');
+
+            cards.forEach((card) => {
+                card.addEventListener('click', function() {
+
+                    card.classList.toggle('is-flipped');
+                });
+            });
+        });
+    </script>
+
+    <!-- header -->
+    <header class="header">
+        <!-- navbar -->
+        <div class="navbar">
+            <div class="navigation-logo">
+                <a href="index.html"><img src="img/logo.png" alt="MézesBéles LOGO"></a>
+            </div>
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                    <a href="index.html" class="navigation-link">főoldal</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="about-us.html" class="navigation-link">rólunk</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link" id="current">menü</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="contact.html" class="navigation-link">kapcsolat</a>
+                </li>
+                <li class="navigation-item-order">
+                    <button class="navigation-btn">rendelés</button>
+                </li>
+            </ul>
+        </div>
+        <!-- end of navbar -->
+        <!-- moving pics -->
+        <div class="banner-menu">
+            <h1 class="banner-heading-menu">Menü</h1>
+            <p class="banner-p-menu">A MézesBéles Cukrászda széles választékkal várja vendégeit</p>
+        </div>
+        <div class="placeholder-menu-banner"></div>
+        <!-- end of header text -->
+    </header>
+    <!-- end of header -->
+
+    <!-- main section -->
+    <section class="menu-main-section">
+        <h1 class="menu-heading">*Az allergének megtekintéséhez kattintson a kártyákra!</h1>
+        <div class="all-cards-wrapper">
+
+            <div class="menu-card-wrapper">
+                <div class="card">
+                    <div class="card-face card__face--front">
+                        <div class="menu-img-wrapper">
+                            <img src="img/mezes-beles-torta.jpg" alt="Mézes Béles Torta" class="img-cake">
+                        </div>
+                        <p class="menu-basic-infos">
+                            <span>Mézes Béles Torta</span>
+                        </p>
+                    </div>
+                    <div class="card-face card__face--back">
+                        <p class="menu-basic-infos">
+                            <span>Allergének:</span> </br> Laktóz, glutén, dió, répa, tojás
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card-wrapper">
+                <div class="card">
+                    <div class="card-face card__face--front">
+                        <div class="menu-img-wrapper">
+                            <img src="img/mezeskalacs-torta.jpg" alt="Mézeskalács torta" class="img-cake">
+                        </div>
+                        <p class="menu-basic-infos">
+                            <span>Mézeskalács Torta</span>
+                        </p>
+                    </div>
+                    <div class="card-face card__face--back">
+                        <p class="menu-basic-infos">
+                            <span>Allergének:</span> </br> Glutén, dió, laktóz
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card-wrapper">
+                <div class="card">
+                    <div class="card-face card__face--front">
+                        <div class="menu-img-wrapper">
+                            <img src="img/turos-csokolade-bomba.jpg" alt="Túrós Csokoládé Bomba" class="img-cake">
+                        </div>
+                        <p class="menu-basic-infos">
+                            <span>Túrós Csokoládé Bomba</span>
+                        </p>
+                    </div>
+                    <div class="card-face card__face--back">
+                        <p class="menu-basic-infos">
+                            <span>Allergének:</span> </br> Laktóz, glutén, szója, tojás
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card-wrapper">
+                <div class="card">
+                    <div class="card-face card__face--front">
+                        <div class="menu-img-wrapper">
+                            <img src="img/erdei-gyumolcsos-sajttorta.jpg" alt="Erdei Gyümölcsös Sajttorta" class="img-cake">
+                        </div>
+                        <p class="menu-basic-infos">
+                            <span>Erdei Gyümölcsös Sajttorta</span>
+                        </p>
+                    </div>
+                    <div class="card-face card__face--back">
+                        <p class="menu-basic-infos">
+                            <span>Allergének:</span> </br> Laktóz, glutén, szójaleticin
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card-wrapper">
+                <div class="card">
+                    <div class="card-face card__face--front">
+                        <div class="menu-img-wrapper">
+                            <img src="img/fuges-mascarpones-torta.jpg" alt="Fügés Mascarpone Torta" class="img-cake">
+                        </div>
+                        <p class="menu-basic-infos">
+                            <span>Fügés Mascarpone Torta</span>
+                        </p>
+                    </div>
+                    <div class="card-face card__face--back">
+                        <p class="menu-basic-infos">
+                            <span>Allergének:</span> </br> Laktóz, glutés, füge
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card-wrapper">
+                <div class="card">
+                    <div class="card-face card__face--front">
+                        <div class="menu-img-wrapper">
+                            <img src="img/narancsos-kremes-torta.jpg" alt="Narancsos Krémes Torta" class="img-cake">
+                        </div>
+                        <p class="menu-basic-infos">
+                            <span>Narancsos Krémes Torta</span>
+                        </p>
+                    </div>
+                    <div class="card-face card__face--back">
+                        <p class="menu-basic-infos">
+                            <span>Allergének:</span> </br> Glutén, narancs, laktóz
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card-wrapper">
+                <div class="card">
+                    <div class="card-face card__face--front">
+                        <div class="menu-img-wrapper">
+                            <img src="img/eperhabos-pite.jpg" alt="Eperhabos Pite" class="img-cake">
+                        </div>
+                        <p class="menu-basic-infos">
+                            <span>Eperhabos Pite</span>
+                        </p>
+                    </div>
+                    <div class="card-face card__face--back">
+                        <p class="menu-basic-infos">
+                            <span>Allergének:</span> </br> Glutén, laktóz, tojás
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card-wrapper">
+                <div class="card">
+                    <div class="card-face card__face--front">
+                        <div class="menu-img-wrapper">
+                            <img src="img/mandulas-kremes.jpg" alt="Mandulás Krémes" class="img-cake">
+                        </div>
+                        <p class="menu-basic-infos">
+                            <span>Mandulás Krémes</span>
+                        </p>
+                    </div>
+                    <div class="card-face card__face--back">
+                        <p class="menu-basic-infos">
+                            <span>Allergének:</span> </br> Glutén, mandula, laktóz
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card-wrapper">
+                <div class="card">
+                    <div class="card-face card__face--front">
+                        <div class="menu-img-wrapper">
+                            <img src="img/tiramisu.jpg" alt="Tiramisu" class="img-cake">
+                        </div>
+                        <p class="menu-basic-infos">
+                            <span>Tiramisu</span>
+                        </p>
+                    </div>
+                    <div class="card-face card__face--back">
+                        <p class="menu-basic-infos">
+                            <span>Allergének:</span> </br> Glutén, laktóz, koffein, tojás
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card-wrapper">
+                <div class="card">
+                    <div class="card-face card__face--front">
+                        <div class="menu-img-wrapper">
+                            <img src="img/csokolade-mousse.jpg" alt="Csokoládés Mousse" class="img-cake">
+                        </div>
+                        <p class="menu-basic-infos">
+                            <span>Csokoládés Mousse</span>
+                        </p>
+                    </div>
+                    <div class="card-face card__face--back">
+                        <p class="menu-basic-infos">
+                            <span>Allergének:</span> </br> Laktóz, szója
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card-wrapper">
+                <div class="card">
+                    <div class="card-face card__face--front">
+                        <div class="menu-img-wrapper">
+                            <img src="img/kokuszos-gyumolcspure.jpg" alt="Kókuszos Gyümölcspüré" class="img-cake">
+                        </div>
+                        <p class="menu-basic-infos">
+                            <span>Kókuszos Gyümölcspüré</span>
+                        </p>
+                    </div>
+                    <div class="card-face card__face--back">
+                        <p class="menu-basic-infos">
+                            <span>Allergének:</span> </br> Laktóz, kókusz
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card-wrapper">
+                <div class="card">
+                    <div class="card-face card__face--front">
+                        <div class="menu-img-wrapper">
+                            <img src="img/citromos-sajttorta-szelet.jpg" alt="Citromos Sajttorta Szelet" class="img-cake">
+                        </div>
+                        <p class="menu-basic-infos">
+                            <span>Citromos Sajttorta Szelet</span>
+                        </p>
+                    </div>
+                    <div class="card-face card__face--back">
+                        <p class="menu-basic-infos">
+                            <span>Allergének:</span> </br> Glutén, citrom, laktóz, mogyoró, tojás
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card-wrapper">
+                <div class="card">
+                    <div class="card-face card__face--front">
+                        <div class="menu-img-wrapper">
+                            <img src="img/brownie.jpg" alt="Brownie" class="img-cake">
+                        </div>
+                        <p class="menu-basic-infos">
+                            <span>Brownie</span>
+                        </p>
+                    </div>
+                    <div class="card-face card__face--back">
+                        <p class="menu-basic-infos">
+                            <span>Allergének:</span> </br> Glutén, mogyoró, laktóz, szója, tojás
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card-wrapper">
+                <div class="card">
+                    <div class="card-face card__face--front">
+                        <div class="menu-img-wrapper">
+                            <img src="img/kokuszos-kocka.jpg" alt="Kókuszos Kocka" class="img-cake">
+                        </div>
+                        <p class="menu-basic-infos">
+                            <span>Kókuszos Kocka</span>
+                        </p>
+                    </div>
+                    <div class="card-face card__face--back">
+                        <p class="menu-basic-infos">
+                            <span>Allergének:</span> </br> Glutén, kókusz, laktóz, tojás
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card-wrapper">
+                <div class="card">
+                    <div class="card-face card__face--front">
+                        <div class="menu-img-wrapper">
+                            <img src="img/fahéjas-csiga.jpg" alt="Fahéjas Csiga" class="img-cake">
+                        </div>
+                        <p class="menu-basic-infos">
+                            <span>Fahéjas Csiga</span>
+                        </p>
+                    </div>
+                    <div class="card-face card__face--back">
+                        <p class="menu-basic-infos">
+                            <span>Allergének:</span> </br> Glutén, tojás, laktóz, fahéj
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card-wrapper">
+                <div class="card">
+                    <div class="card-face card__face--front">
+                        <div class="menu-img-wrapper">
+                            <img src="img/matcha-scone.jpg" alt="Matcha Scone" class="img-cake">
+                        </div>
+                        <p class="menu-basic-infos">
+                            <span>Matcha Scone</span>
+                        </p>
+                    </div>
+                    <div class="card-face card__face--back">
+                        <p class="menu-basic-infos">
+                            <span>Allergének:</span> </br> Glutén, tojás, laktóz, matcha
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card-wrapper">
+                <div class="card">
+                    <div class="card-face card__face--front">
+                        <div class="menu-img-wrapper">
+                            <img src="img/diohabos-linzer.jpg" alt="Dióhabos Linzer" class="img-cake">
+                        </div>
+                        <p class="menu-basic-infos">
+                            <span>Dióhabos Linzer</span>
+                        </p>
+                    </div>
+                    <div class="card-face card__face--back">
+                        <p class="menu-basic-infos">
+                            <span>Allergének:</span> </br> Glutén, dió, tojás
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card-wrapper">
+                <div class="card">
+                    <div class="card-face card__face--front">
+                        <div class="menu-img-wrapper">
+                            <img src="img/malnas-macaron.jpg" alt="Málnás Macaron" class="img-cake">
+                        </div>
+                        <p class="menu-basic-infos">
+                            <span>Málnás Macaron</span>
+                        </p>
+                    </div>
+                    <div class="card-face card__face--back">
+                        <p class="menu-basic-infos">
+                            <span>Allergének:</span> </br> Mandula, tojás, laktóz
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card-wrapper">
+                <div class="card">
+                    <div class="card-face card__face--front">
+                        <div class="menu-img-wrapper">
+                            <img src="img/francia-croissant.jpg" alt="Francia Croissant" class="img-cake">
+                        </div>
+                        <p class="menu-basic-infos">
+                            <span>Francia Croissant</span>
+                        </p>
+                    </div>
+                    <div class="card-face card__face--back">
+                        <p class="menu-basic-infos">
+                            <span>Allergének:</span> </br> Glutén, tojás, laktóz
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card-wrapper">
+                <div class="card">
+                    <div class="card-face card__face--front">
+                        <div class="menu-img-wrapper">
+                            <img src="img/vanilias-kifli.jpg" alt="Vaníliás Kifli" class="img-cake">
+                        </div>
+                        <p class="menu-basic-infos">
+                            <span>Vaníliás Kifli</span>
+                        </p>
+                    </div>
+                    <div class="card-face card__face--back">
+                        <p class="menu-basic-infos">
+                            <span>Allergének:</span> </br> Glutén, mandula, tojás
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- end of main section -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="main-part">
+            <div class="footer-list-wrapper">
+                <h3 class="footer-heading">MézesBéles Cukrászda</h3>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a href="#" class="footer-list-link">
+                            info@mezesbeles.hu
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#" class="footer-list-link">
+                            1079 Budapest, Édesség utca 172/B.
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#" class="footer-list-link">
+                            Tel: +123 456 789
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-list-wrapper">
+                <h3 class="footer-heading">Gyors linkek</h3>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a href="index.html" class="footer-list-link">
+                            Főoldal
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="about-us.html" class="footer-list-link">
+                            Rólunk
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="menu.html" class="footer-list-link">
+                            Menü
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="contact.html" class="footer-list-link">
+                            Kapcsolat
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#" class="footer-list-link">
+                            Rendelés
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3 class="footer-heading">Kapcsolat</h3>
+                <p>Feliratkozás a hírlevélre</p>
+                <form class="footer-form">
+                    <input type="text" class="footer-input" placeholder="Your email...">
+                    <button class="footer-btn">Feliratkozás</button>
+                </form>
+            </div>
+        </div>
+        <div class="creator-part">
+            <div class="copyright-text">
+                <p>Copyright &copy; 2023. Corvinus University of Budapest. Thesis Project of Noémi Gazdik. All rights reserved.</p>
+            </div>
+            <div class="text-right">
+                <p>Made With <i class="fas fa-heart"></i> by <span>Noi</span></p>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+</body>
+
+</html>
