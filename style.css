@@ -126,7 +126,7 @@ header {
 }
 
 .header-img {
-    width: 100%;
+    max-width: 100%;
     opacity: .75;
     margin-top: 1rem;
 }
