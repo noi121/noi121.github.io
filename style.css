@@ -720,7 +720,7 @@ tbody tr:nth-child(even) {
     
 }
 
-@media(max-width: 950px) {
+@media(max-width: 900px) {
 /* index.html főkép csere */
     .navbar {
         flex-direction: column;
@@ -926,7 +926,7 @@ tbody tr:nth-child(even) {
     }
 }
 
-@media (max-height: 700px) and (orientation: landscape) {
+@media (max-height: 700px) and (orientation: landscape) and (max-height: 1000px) {
     .navbar {
         flex-direction: row;
         align-items:start;
