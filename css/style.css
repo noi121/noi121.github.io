@@ -119,14 +119,12 @@ header {
 /* moving pics */
 
 .moving-pics {
+    width: 100%;
     flex-basis: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .header-img {
-    width: 100vw;
+    width: 100%;
     opacity: .75;
     margin-top: 1rem;
 }
@@ -816,6 +814,13 @@ tbody tr:nth-child(even) {
     .services-card {
         max-width: 60vw;
     }
+    .footer-input {
+        width: 15rem;
+        font-size: 1.3rem;
+    }
+    .footer-btn {
+        font-size: 1rem;
+    }
 }
 
 @media(max-width: 600px) {
@@ -878,13 +883,6 @@ tbody tr:nth-child(even) {
     .contact p {
         font-size: 1.2rem;
     }
-    .footer-input {
-        width: 15rem;
-        font-size: 1.3rem;
-    }
-    .footer-btn {
-        font-size: 1rem;
-    }
     .au-main-section {
         padding: 3rem;
     }
@@ -908,7 +906,7 @@ tbody tr:nth-child(even) {
         font-size: 2rem;
     }
 }
-@media (max-height: 750px) {
+@media (max-height: 700px) {
     .navbar {
         flex-basis: 60%;
     }
@@ -926,7 +924,7 @@ tbody tr:nth-child(even) {
     }
 }
 
-@media (max-height: 750px) and (orientation: landscape) {
+@media (max-height: 700px) and (orientation: landscape) and (max-width: 1000px) {
     .navbar {
         flex-direction: row;
         align-items:start;
