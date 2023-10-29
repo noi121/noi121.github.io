@@ -926,7 +926,7 @@ tbody tr:nth-child(even) {
     }
 }
 
-@media (max-height: 700px) and (orientation: landscape) and (max-height: 1000px) {
+@media (max-height: 700px) and (orientation: landscape) and (max-width: 1000px) {
     .navbar {
         flex-direction: row;
         align-items:start;
