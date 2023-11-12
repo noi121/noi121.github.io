@@ -81,18 +81,18 @@ header {
     background-color: black;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-  }
+}
 
-  .navigation-item:hover {
+.navigation-item:hover {
     transform: translateY(-7px);
-  }
+}
 
-  .navigation-item:hover::after {
+.navigation-item:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
+}
 
-  .navigation-btn {
+.navigation-btn {
     width: 15rem;
     padding: 1rem 2rem;
     color: black;
@@ -105,14 +105,28 @@ header {
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: all 0.3s ease 0s;
-  }
+}
 
-  .navigation-btn:hover {
+.navigation-btn:hover {
     background-color: rgba(0, 0, 0, 0.8);
     box-shadow: 0px 15px 20px rgba(208,145,105,1);
     color: #fff;
     transform: translateY(-7px);
-  }
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 3.5rem;
+    height: .4rem;
+    margin: .7rem auto;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background-color: black;
+}
 
 /* end of navbar */
 
@@ -828,21 +842,53 @@ tbody tr:nth-child(even) {
 
 @media(max-width: 600px) {
     .navbar {
-        flex-basis: 50%;
+        flex-basis: 20%;
+        flex-direction: row;
+        align-items: start;
+    }
+    .navigation-logo img {
+        width: 15rem;
     }
     .navigation-list {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        position: fixed;
+        right: -100%;
+        top: 1rem;
+        transition: .5s;
+    }
+    .navigation-list.active {
+        right: -2rem;
+        position: absolute;
+    }
+    .navigation-item {
+        margin-bottom: .5rem;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin: 3rem;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(1.1rem) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-1.1rem) rotate(-45deg);
     }
     .moving-pics {
-        flex-basis: 0%;
+        flex-basis: 5%;
     }
     .banner {
         flex-basis: 10%;
     }
     .banner-about-us {
-        flex-basis: 30%;
+        flex-basis: 50%;
     }
     .banner-heading-au {
         font-size: 3rem;
@@ -851,10 +897,10 @@ tbody tr:nth-child(even) {
         font-size: 1.5rem;
     }
     .banner-contact {
-        flex-basis: 30%;
+        flex-basis: 50%;
     } 
     .banner-menu {
-        flex-basis: 30%;
+        flex-basis: 50%;
     }
     .banner-heading-menu {
         font-size: 3rem;
@@ -911,7 +957,7 @@ tbody tr:nth-child(even) {
 }
 @media (max-height: 700px) {
     .navbar {
-        flex-basis: 60%;
+        flex-basis: 20%;
     }
     .banner-heading-au {
         font-size: 3rem;
@@ -974,4 +1020,3 @@ tbody tr:nth-child(even) {
         }
     }
 }
-
