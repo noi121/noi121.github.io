@@ -22,6 +22,21 @@
 </head>
 
 <body>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            var hamburger = document.querySelector('.hamburger');
+            var navMenu = document.querySelector('.navigation-list');
+            hamburger.addEventListener('click', function () {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            });
+        });
+
+    </script>
+
     <!-- header -->
     <header class="header">
         <!-- navbar -->
@@ -46,6 +61,11 @@
                     <button class="navigation-btn">rendelés</button>
                 </li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
         <!-- end of navbar -->
         <!-- moving pics -->

@@ -24,15 +24,25 @@
 <body>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
 
             var cards = document.querySelectorAll('.card');
 
             cards.forEach((card) => {
-                card.addEventListener('click', function() {
+                card.addEventListener('click', function () {
 
                     card.classList.toggle('is-flipped');
                 });
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            var hamburger = document.querySelector('.hamburger');
+            var navMenu = document.querySelector('.navigation-list');
+            hamburger.addEventListener('click', function () {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
             });
         });
     </script>
@@ -61,6 +71,11 @@
                     <button class="navigation-btn">rendelés</button>
                 </li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
         <!-- end of navbar -->
         <!-- moving pics -->
@@ -136,7 +151,8 @@
                 <div class="card">
                     <div class="card-face card__face--front">
                         <div class="menu-img-wrapper">
-                            <img src="img/erdei-gyumolcsos-sajttorta.jpg" alt="Erdei Gyümölcsös Sajttorta" class="img-cake">
+                            <img src="img/erdei-gyumolcsos-sajttorta.jpg" alt="Erdei Gyümölcsös Sajttorta"
+                                class="img-cake">
                         </div>
                         <p class="menu-basic-infos">
                             <span>Erdei Gyümölcsös Sajttorta</span>
@@ -280,7 +296,8 @@
                 <div class="card">
                     <div class="card-face card__face--front">
                         <div class="menu-img-wrapper">
-                            <img src="img/citromos-sajttorta-szelet.jpg" alt="Citromos Sajttorta Szelet" class="img-cake">
+                            <img src="img/citromos-sajttorta-szelet.jpg" alt="Citromos Sajttorta Szelet"
+                                class="img-cake">
                         </div>
                         <p class="menu-basic-infos">
                             <span>Citromos Sajttorta Szelet</span>
@@ -507,7 +524,8 @@
         </div>
         <div class="creator-part">
             <div class="copyright-text">
-                <p>Copyright &copy; 2023. Corvinus University of Budapest. Thesis Project of Noémi Gazdik. All rights reserved.</p>
+                <p>Copyright &copy; 2023. Corvinus University of Budapest. Thesis Project of Noémi Gazdik. All rights
+                    reserved.</p>
             </div>
             <div class="text-right">
                 <p>Made With <i class="fas fa-heart"></i> by <span>Noi</span></p>
